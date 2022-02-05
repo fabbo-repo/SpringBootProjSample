@@ -14,19 +14,19 @@ public class Product {
 	@Id
 	private int cod_product;
 	
-	@Column(name="nombrearticulo")
+	@Column(name="article_name")
 	private String article_name;
 
-	@Column(name="precio")
+	@Column(name="price")
 	private double price;
 
-	@Column(name="seccion")
+	@Column(name="section")
 	private String section;
 
-	@Column(name="paisdeorigen")
+	@Column(name="origin_country")
 	private String origin_country;
 
-	@Column(name="fecha")
+	@Column(name="origin_date")
 	private Date origin_date;
 
 	/**

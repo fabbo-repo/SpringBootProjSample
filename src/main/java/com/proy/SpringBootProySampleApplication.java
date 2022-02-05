@@ -16,12 +16,12 @@ public class SpringBootProySampleApplication implements CommandLineRunner{
 	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootProySampleApplication.class, args);
-		LOG.info("APP Running < Custom log");
+		
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
-		
+		LOG.info("APP Running < Custom log");
 	}
 
 }

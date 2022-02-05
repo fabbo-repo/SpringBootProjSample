@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.proy.model.Product;
@@ -23,9 +24,10 @@ public class DemoController {
 			Model model) {
 		// Logica de negocio
 		Product p = new Product();
-		p.setCodProduct(17);
+		p.setCodProduct(1);
 		p.setArticleName("Tenedores");
 		p.setPrice(4.55);
+		p.setSection("cocina");
 		p.setOriginDate(new Date(System.currentTimeMillis()));
 		p.setOriginCountry("ESP");
 		// Añadir a base de datos:
